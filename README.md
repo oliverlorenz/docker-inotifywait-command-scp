@@ -6,9 +6,8 @@ An Extension of [docker-inotifywait-command](https://github.com/oliverlorenz/doc
 
 ```
 docker run -d \
-  -v $(pwd)/command.sh:/command.sh \
   -v /tmp/input:/watch \
   -v /root/.ssh:/root/.ssh
   -e "SCP_COMMAND/$FILE=user@host:/home/user"
-  oliverlorenz/inotifywait-command
+  oliverlorenz/inotifywait-command-scp
 ```
